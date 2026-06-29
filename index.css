@@ -1,0 +1,101 @@
+body{
+    font-family: 'Helvetica';
+    margin: 0;
+}
+h1{
+    color: rgb(17, 71, 133);
+    font-weight: 800;
+    margin-bottom: 0;
+}
+#headerH3{
+   color: rgb(74, 72, 72); 
+   font-size: 15px;
+   font-weight: 200;
+   margin-top: 0;
+}
+header{
+    text-align: center;
+}
+table{
+    border:2px solid black;
+    border-radius: 7px;
+    margin-left: 25vw;
+}
+th,td{
+    border:2px solid black;
+    border-collapse: collapse;
+    height: 10vh;
+    width:15vw;
+    text-align: center;
+}
+th{
+    background-color: rgb(17, 71, 133);
+    color: aliceblue;
+    font-size: 25px;
+}
+img{
+    border-radius: 50%;
+    height: 20vh;
+    width:10vw;
+    margin-left: 15px;
+}
+h3{
+    color: rgb(17, 71, 133);
+    margin-left: 20px;
+    font-size: 30px;
+}
+#abtFlex{
+    display: flex;
+    gap:20px;
+}
+nav{
+    background-color: rgb(17, 71, 133);
+    height: 10vh;
+    display: flex;
+    gap:70px;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+a:visited{
+    color:aliceblue;
+}
+a:hover{
+    color: rgb(160, 162, 164);
+}
+ul{
+    font-size: 15px;
+    font-weight: 900;
+    margin-left: 5vw;
+}
+footer{
+    background-color: rgb(17, 71, 133);
+    height: 20vh;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 20px;
+}
+input{
+    height: 30px;
+    width: 500px;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+form{
+    margin-bottom: 10vh;
+}
+label{
+    margin-left: 10px;
+}
+form{
+    margin-left: 25vw;
+}
+.Field{
+    margin-top: 10px;
+}
