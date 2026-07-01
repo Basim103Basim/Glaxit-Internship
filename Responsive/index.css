@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+#container{
+    display: grid;
+    font-family: 'Helvetica';
+    display: grid;
+    grid-template-areas: "header header header""leftBar main rightBar""footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    row-gap: 10px;
+}
+h1{
+    color: rgb(104, 70, 25);
+    margin: 0;
+    font-size: 40px;
+    font-weight: 900;
+}
+#header-description{
+    color: white;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: rgb(104, 70, 25);
+    height: 5vh;
+}
+header{
+    text-align: center;
+}
+.sideBars{
+    background-color: green;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+    border: 5px solid rgb(11, 75, 11);
+}
+ul{
+    width: fit-content;
+    color: white;
+    margin-right: 15px;
+}
+li{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.barHeading{
+    width: fit-content;
+    margin: 0 auto;
+    font-weight: 900;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+footer{
+    background-color: rgb(104, 70, 25);
+    text-align: center;
+    color: white;
+    border-top: 5px solid rgb(68, 45, 15);
+}
+@media (min-width:768px){
+
+    .row{
+        display:flex;
+        justify-content:center;
+        gap:3rem;
+        margin-bottom:2rem;
+    }
+
+}
+img{
+    width: 100%;
+    max-width: 200px;
+    height:auto;
+    margin-bottom: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.imageDescription{
+    width: 100%;
+    max-width: 200px;
+    box-sizing: border-box;
+    height: 40px;
+    background-color: rgb(104, 70, 25);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: aliceblue;
+    margin-top:0px;
+    text-align: center;
+}
+.image{
+    width:100%;
+    max-width:200px;
+}
+@media (max-width:767px){
+
+    #container{
+
+        grid-template-areas:
+        "header"
+        "main"
+        "leftBar"
+        "rightBar"
+        "footer";
+
+        grid-template-columns:1fr;
+    }
+
+    .sideBars{
+        margin:10px;
+    }
+
+    .row{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+}
