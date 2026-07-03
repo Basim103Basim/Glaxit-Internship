@@ -1,0 +1,192 @@
+/*all starts*/
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+h3{
+    color: rgb(65, 65, 236);
+    font-size: 1.75rem;
+    font-weight: 900;
+    margin: 0;
+}
+@keyframes fadeIn{
+    from{
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+section{
+    scroll-margin-top: 10vh;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    margin: 0 auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding:20px;
+    margin-top: 5vh;
+    height: 60vh;
+}
+/*all ends*/
+/*hero starts*/
+#hero{
+    box-sizing: border-box;
+    background:linear-gradient(135deg,rgb(211, 51, 211),rgb(65, 65, 236)) ;
+    height: 100vh;
+    padding-top: 3vh;
+    text-align: center;
+    color: aliceblue;
+    animation:fadeIn 1.5s;
+}
+h1{
+    font-size: 3rem;
+    opacity: 0;
+    animation:fadeIn 1s 1.5s forwards;
+}
+#hero-p{
+    font-size: 0.75rem;
+    font-weight: 800;
+    opacity:0;
+    animation:fadeIn 1s 1.5s forwards;
+}
+img{
+    height: 40vh;
+    width: auto;
+    border:5px solid white;
+    border-radius: 50%;
+    opacity: 0;
+    animation:fadeIn 1s 1.5s forwards;
+}
+/*hero ends*/
+/*sticky nav starts*/
+nav{
+    background: linear-gradient(135deg,rgb(25, 24, 24),rgb(48, 45, 45));
+    height: 10vh;
+    position: sticky;
+    top:0;
+    display: flex;
+    gap:5vw;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: 0.7rem;
+}
+a:visited{
+    color:white;
+}
+/*sticky nav ends*/
+/*footer starts*/
+footer{
+    background: linear-gradient(135deg,rgb(25,24,24),rgb(48,45,45));
+    color: white;
+    font-weight: 700;
+    padding-top: 3vh;
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 0.7rem;
+    height: 20vh;
+}
+/*footer ends*/
+/*education starts*/
+table,th,td{
+    border: 2px solid black;
+}
+th,td{
+    text-align: center;
+    width: 25vw;
+}
+th{
+    background-color: rgb(65, 65, 236);
+    color: white;
+}
+table{
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+/*education ends*/
+/*Skills and Project starts*/
+ul{
+    font-weight: 700;
+}
+/*Skills and Project ends*/
+/*Contacts starts*/
+label{
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+input{
+    border-radius: 5px;
+    height: 5vh;
+    width:70%;
+    border: 2px solid black; 
+}
+.fields{
+    margin: 0 auto;
+}
+button{
+    display: block;
+    background-color: rgb(65, 65, 236);
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 7px;
+    width: 50%;
+    height: 7vh;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+button:hover{
+    background-color: rgb(47, 47, 150);
+}
+button:active{
+    scale: 1.2;
+}
+/*Contacts ends*/
+/*big screen starts*/
+@media (min-width:767px){
+    #hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
+    img{
+        height: 50vh;
+        width: auto;
+    }
+    nav{
+        grid-area: nav;
+    }
+    #About{
+        grid-area: About;
+    }
+    #Education{
+        grid-area: Education;
+    }
+    #Projects{
+        grid-area: Projects;
+    }
+    #Skills{
+        grid-area: Skills;
+    }
+    #Contact{
+        grid-area: Contact;
+        justify-self: center;
+        width: 50%;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "About Education" "Projects Skills" "Contact Contact";
+    }
+}
+/*big screen ends*/
