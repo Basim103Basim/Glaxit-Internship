@@ -1,0 +1,197 @@
+/*all start*/
+body{
+    font-family: 'Helvetica';
+    background: linear-gradient(105deg,rgb(67, 64, 64),rgb(16, 16, 82));
+    margin: 0;
+    padding: 0;
+}
+@keyframes slideIn{
+    from{
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/*all end*/
+/*hero section start*/
+header{
+    height: 100vh;
+    box-sizing: border-box;
+    text-align: center;
+}
+#header-image{
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 40vh;
+    width: 40vh;
+    margin-top: 10vh;
+    box-shadow: 5px 5px 20px rgba(0,0,0,1);
+    animation: slideIn 1.5s forwards;
+}
+#header-text{
+    color: white;
+    animation: slideIn 1.5s forwards;
+    text-shadow: 5px 5px 20px rgba(0,0,0,1);
+}
+#header-text-heading{
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+#header-text-text{
+    margin-top: 0;
+}
+/*hero section end*/
+/*instruction start*/
+#instruction{
+    background:linear-gradient(135deg,rgb(39, 37, 37),rgb(75, 71, 71));
+    margin-left: 5vw;
+    margin-right: 5vw;
+    height: 30vh;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-shadow: 5px 5px 20px rgba(0,0,0,1);
+    box-shadow: 5px 5px 20px rgba(0,0,0,1);
+}
+/*instruction end*/
+/*cards start*/
+.card{
+    justify-self: center;
+    box-shadow: 5px 5px 20px rgba(0,0,0,1);
+    border-radius: 10px;
+    margin-top: 15vh;
+    transition:transform 0.4s 0.1s
+}
+.card-text{
+    background:linear-gradient(135deg,rgb(39, 37, 37),rgb(75, 71, 71));
+    margin-top: 0;
+    width: 60vw;
+    height: 25vh;
+    text-align: center;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 3vh;
+    box-shadow: none;
+    box-sizing: border-box;
+    text-shadow: 5px 5px 20px rgba(0,0,0,1);
+}
+.card-text-text{
+    margin-top: 0;
+    margin-bottom:0;
+}
+.card-text-heading{
+    margin-top: 0;
+    margin-bottom:0;
+    font-size: 2rem;
+}
+.card-image{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-bottom: 0;
+    display: block;
+    height: 70vh;
+    width: 60vw;
+}
+.card:hover,.card:active{
+    transform: scale(1.2);
+}
+/*cards end*/
+/*main start*/
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/*main end*/
+/*footer start*/
+footer{
+    background: linear-gradient(135deg,rgb(39, 37, 37),rgb(75, 71, 71));
+    margin-top: 15vh;
+    height: 50vh;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 7vh;
+    border:2px solid rgb(39, 37, 37);
+}
+.footer-text{
+    text-shadow: 5px 5px 20px rgba(0,0,0,1);
+    margin: 0;
+    color:white;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+/*footer end*/
+@media (min-width:767px) {
+    header{
+        height: 50vh;
+        display: grid;
+        grid-template-areas: "image txt";
+    }
+    #header-image{
+        grid-area: image;
+        justify-self: center;
+    }
+    #header-text{
+        grid-area: txt;
+        align-self: center;
+        justify-self: left;
+    }
+    #instruction{
+        margin-top: 10vh;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    /*card start*/
+    .card{
+        justify-self: center;
+        box-shadow: 5px 5px 20px rgba(0,0,0,1);
+        border-radius: 10px;
+        margin-top: 15vh;
+        transition:transform 0.4s 0.1s
+    }
+    .card-text{
+        background:linear-gradient(135deg,rgb(39, 37, 37),rgb(75, 71, 71));
+        margin-top: 0;
+        width: 40vw;
+        height: 25vh;
+        text-align: center;
+        color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding-top: 3vh;
+        box-shadow: none;
+        box-sizing: border-box;
+        text-shadow: 5px 5px 20px rgba(0,0,0,1);
+    }
+    .card-text-text{
+        margin-top: 0;
+        margin-bottom:0;
+    }
+    .card-text-heading{
+        margin-top: 0;
+        margin-bottom:0;
+        font-size: 2rem;
+    }
+    .card-image{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        margin-bottom: 0;
+        display: block;
+        height: 60vh;
+        width: 40vw;
+    }
+    .card:hover,.card:active{
+        transform: scale(1.1);
+    }
+    /*card end*/
+
+}
