@@ -1,0 +1,174 @@
+/*all start*/
+body{
+    margin: 0;
+    padding:0;
+    background: linear-gradient(135deg,rgb(28, 36, 29),rgb(20, 35, 20));
+    min-height:100vh;
+    font-family: 'Helvetica';
+    text-shadow: 5px 5px 20px rgba(0,0,0,1);
+}
+@keyframes slideIn{
+    from{
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/*all end*/
+/*header start*/
+header{
+    background: linear-gradient(90deg,rgb(3, 44, 3),rgb(7, 87, 7));
+    color: white;
+    height: 30vh;
+    text-align: center;
+    padding-top: 5vh;
+    box-shadow: 5px 5px 20px rgba(0,0,0,1);
+    width: 100vw;
+}
+#header-heading{
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 900;
+    animation: slideIn 1s 0.1s;
+}
+#header-text{
+    font-size: 1.2rem;
+    animation: slideIn 1s 0.1s;
+    margin: 0;
+}
+/*header end*/
+/*main and sections start*/
+button{
+    background: linear-gradient(135deg,rgb(22, 22, 85),blue);
+    color: white;
+    font-weight: 900;
+    border: none;
+    border-radius: 10px;
+    height: 10vh;
+    width: 15vw;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    box-shadow: 5px 5px 20px rgba(0,0,0,1);
+    transition: transform 1s 0.1s;
+}
+button:hover{
+    background: linear-gradient(135deg,rgb(31, 31, 120),rgb(22,22,85));
+}
+button:active{
+    transform: scale(1.8);
+}
+main{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+section{
+    justify-self: center;
+    background: linear-gradient(135deg,rgb(67, 65, 65),rgb(92, 89, 89));
+    border-radius: 20px;
+    margin-top: 10vh;
+    box-shadow: 5px 5px 20px rgba(0,0,0,1);
+    width: 50vw;
+    transition: transform 1s 0.1s;
+}
+section:hover,:focus{
+    transform: scale(1.05);
+}
+button{
+    justify-self: center;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+.sectionHeading{
+    color: white;
+    text-align: center;
+}
+.input-entered{
+    width: 30vw;
+    height: 5vh;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.5s 0.1s;
+}
+.input-entered:focus{
+    box-shadow: 5px 5px 20px rgba(0,0,0,1);
+    transform: scale(1.1);
+}
+.input-entered:valid{
+    box-shadow: 5px 5px 20px rgba(7, 87, 7,1);
+}
+.label-entered{
+    margin-left: 10vw;
+    margin-bottom: 2vh;
+}
+label{
+    color: white;
+    font-size: 0.8rem;
+}
+/*main and sections end*/
+/*personal start*/
+/*personal end*/
+/*company start*/
+/*company end*/
+/*lead start*/
+.leadDetails-box-headings{
+    padding-left: 20px;
+    color: white;
+}
+select{
+    width: 20vw;
+    height: 10vh;
+    margin-left: 20px;
+    padding-left: 10px;
+    font-weight: 900;
+    padding-right: 10px;
+}
+input[name="budget"]:focus,input[name="preferred"]:focus{
+    accent-color: black;
+}
+.budget-box{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+.preferred-box{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+input[type="date"]{
+    height: 10vh;
+    width: 10vw;
+    padding-left: 10px;
+    margin-left: 20px;
+    font-weight: 900;
+}
+textarea{
+    display: block;
+    margin: 0 auto;
+    resize: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+    transition: transform 0.5s 0.1s;
+}
+textarea:focus{
+    box-shadow: 5px 5px 20px rgba(0,0,0,1);
+    transform: scale(1.1);
+}
+#policy-checkbox{
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+/*lead end*/

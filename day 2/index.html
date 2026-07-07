@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1 id="header-heading">Lead Management System</h1>
+        <p id="header-text">New Lead Intake Form</p>
+    </header>
+    <main>
+
+        <section id="personalInfo">
+            <h2 class="sectionHeading">Personal Info</h2>
+            <fieldset>
+                <label class="label-entered" for="input-name">Name</label>
+                <input class="input-entered" id="input-name" type="text" required>
+                <label class="label-entered" for="input-email">Email</label>
+                <input class="input-entered" id="input-email" type="email" required>
+                <label class="label-entered" for="input-phone">Phone</label>
+                <input class="input-entered" id="input-phone" type="tel" required>
+            </fieldset>
+        </section>
+        <section id="companyInfo">
+            <h2 class="sectionHeading">Company Info</h2> 
+            <fieldset>
+                <label class="label-entered" for="input-companyName">Company Name</label>
+                <input class="input-entered" id="input-companyName" type="text" required>
+                <label class="label-entered" for="input-jobTitle">Job Title</label>
+                <input class="input-entered" id="input-jobTitle" type="text" required>
+                <label class="label-entered" for="input-website">Website</label>
+                <input class="input-entered" id="input-website" type="url" required>
+    
+            </fieldset>
+        </section>
+        <section id="leadDetails">
+            <h2 class="sectionHeading">Lead Details</h2>
+            <div id="leadDetails-box">
+                <h3 class="leadDetails-box-headings">Interested Services</h3>
+                <select>
+                    <option>Web Development</option>
+                    <option>UI/UX Design</option>
+                    <option>Digital Marketing</option>
+                    <option>Cyber Security</option>
+                    <option>AI</option>
+                </select>
+                <h3 class="leadDetails-box-headings">Budget</h3>
+                <div class="budget-box">
+                    <label class="budget-radios">
+                        <input type="radio" name="budget">
+                        Under 1000$
+                    </label>
+                    <label class="budget-radios">
+                        <input type="radio" name="budget">
+                        1000$-5000$
+                    </label>
+                    <label class="budget-radios">
+                        <input type="radio" name="budget">
+                        5000$-10000$
+                    </label>
+                    <label class="budget-radios">
+                        <input type="radio" name="budget">
+                        Above 10000$
+                    </label>
+                </div>
+                <h3 class="leadDetails-box-headings">Preferred Contacts</h3>
+                <div class="preferred-box">
+                    <label class="preferred-radios">
+                        <input type="radio" name="preferred">
+                        Phone
+                    </label>
+                    <label class="preferred-radios">
+                        <input type="radio" name="preferred">
+                        Email
+                    </label>
+                    <label class="preferred-radios">
+                        <input type="radio" name="preferred">
+                        Whatsapp
+                    </label>
+                </div>
+                <h3 class="leadDetails-box-headings">Expected Start Date</h3>
+                <input type="date">
+                <h3 class="leadDetails-box-headings">Notes</h3>
+                <textarea rows="13" cols="50"></textarea>
+                <div id="policy-checkbox">
+                    <input type="checkbox">
+                    I agree to terms of privacy policy!
+                </div>
+            </div>
+        </section>
+        <button>Sumbit</button>
+    </main>
+</body>
+</html>
