@@ -1,0 +1,206 @@
+/* ============================
+   Brand color palette (CSS variables)
+   ============================ */
+:root{
+    --color-primary: rgb(7, 87, 7);
+    --color-primary-dark: rgb(3, 44, 3);
+
+    --color-secondary: rgb(20, 35, 20);
+    --color-secondary-dark: rgb(28, 36, 29);
+
+    --color-accent: blue;
+    --color-accent-dark: rgb(22, 22, 85);
+    --color-accent-darker: rgb(31, 31, 120);
+
+    --color-neutral-100: #ffffff;
+    --color-neutral-400: rgb(92, 89, 89);
+    --color-neutral-600: rgb(67, 65, 65);
+    --color-neutral-900: #000000;
+
+    --shadow-color: rgba(0, 0, 0, 1);
+    --shadow-elevated: 5px 5px 20px var(--shadow-color);
+}
+
+/*all start*/
+body{
+    margin: 0;
+    padding:0;
+    background: linear-gradient(135deg,var(--color-secondary-dark),var(--color-secondary));
+    min-height:100vh;
+    font-family: 'Helvetica';
+    text-shadow: var(--shadow-elevated);
+}
+@keyframes slideIn{
+    from{
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/*all end*/
+
+/*site-header start*/
+.site-header{
+    background: linear-gradient(90deg,var(--color-primary-dark),var(--color-primary));
+    color: var(--color-neutral-100);
+    height: 30vh;
+    text-align: center;
+    padding-top: 5vh;
+    box-shadow: var(--shadow-elevated);
+    width: 100vw;
+}
+.site-header__heading{
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 900;
+    animation: slideIn 1s 0.1s;
+}
+.site-header__subtitle{
+    font-size: 1.2rem;
+    animation: slideIn 1s 0.1s;
+    margin: 0;
+}
+/*site-header end*/
+
+/*lead-form layout start*/
+.lead-form__submit{
+    background: linear-gradient(135deg,var(--color-accent-dark),var(--color-accent));
+    color: var(--color-neutral-100);
+    font-weight: 900;
+    border: none;
+    border-radius: 10px;
+    height: 10vh;
+    width: 15vw;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    box-shadow: var(--shadow-elevated);
+    transition: transform 1s 0.1s;
+    justify-self: center;
+}
+.lead-form__submit:hover{
+    background: linear-gradient(135deg,var(--color-accent-darker),var(--color-accent-dark));
+}
+.lead-form__submit:active{
+    transform: scale(1.8);
+}
+
+.lead-form{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+.lead-form__section{
+    justify-self: center;
+    background: linear-gradient(135deg,var(--color-neutral-600),var(--color-neutral-400));
+    border-radius: 20px;
+    margin-top: 10vh;
+    box-shadow: var(--shadow-elevated);
+    width: 50vw;
+    transition: transform 1s 0.1s;
+}
+.lead-form__section:hover,
+.lead-form__section:focus{
+    transform: scale(1.05);
+}
+
+.lead-form__fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.lead-form__section-heading{
+    color: var(--color-neutral-100);
+    text-align: center;
+}
+
+.lead-form__input{
+    width: 30vw;
+    height: 5vh;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.5s 0.1s;
+}
+.lead-form__input:focus{
+    box-shadow: var(--shadow-elevated);
+    transform: scale(1.1);
+}
+.lead-form__input:valid{
+    box-shadow: 5px 5px 20px rgba(7, 87, 7, 1);
+}
+
+.lead-form__label{
+    margin-left: 10vw;
+    margin-bottom: 2vh;
+    color: var(--color-neutral-100);
+    font-size: 0.8rem;
+}
+/*lead-form layout end*/
+
+/*lead-form details box start*/
+.lead-form__details-heading{
+    padding-left: 20px;
+    color: var(--color-neutral-100);
+}
+
+.lead-form__select{
+    width: 20vw;
+    height: 10vh;
+    margin-left: 20px;
+    padding-left: 10px;
+    font-weight: 900;
+    padding-right: 10px;
+}
+
+.lead-form__radio:focus{
+    accent-color: var(--color-neutral-900);
+}
+
+.lead-form__budget{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.lead-form__preferred{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.lead-form__date{
+    height: 10vh;
+    width: 10vw;
+    padding-left: 10px;
+    margin-left: 20px;
+    font-weight: 900;
+}
+
+.lead-form__textarea{
+    display: block;
+    margin: 0 auto;
+    resize: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+    transition: transform 0.5s 0.1s;
+}
+.lead-form__textarea:focus{
+    box-shadow: var(--shadow-elevated);
+    transform: scale(1.1);
+}
+
+.lead-form__policy{
+    text-align: center;
+    color: var(--color-neutral-100);
+    font-size: 0.8rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+/*lead-form details box end*/

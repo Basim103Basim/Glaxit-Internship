@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-header__heading">Lead Management System</h1>
+        <p class="site-header__subtitle">New Lead Intake Form</p>
+    </header>
+    <main class="lead-form">
+
+        <section class="lead-form__section lead-form__section--personal">
+            <h2 class="lead-form__section-heading">Personal Info</h2>
+            <fieldset class="lead-form__fieldset">
+                <label class="lead-form__label" for="input-name">Name</label>
+                <input class="lead-form__input" id="input-name" type="text" required>
+                <label class="lead-form__label" for="input-email">Email</label>
+                <input class="lead-form__input" id="input-email" type="email" required>
+                <label class="lead-form__label" for="input-phone">Phone</label>
+                <input class="lead-form__input" id="input-phone" type="tel" required>
+            </fieldset>
+        </section>
+
+        <section class="lead-form__section lead-form__section--company">
+            <h2 class="lead-form__section-heading">Company Info</h2>
+            <fieldset class="lead-form__fieldset">
+                <label class="lead-form__label" for="input-companyName">Company Name</label>
+                <input class="lead-form__input" id="input-companyName" type="text" required>
+                <label class="lead-form__label" for="input-jobTitle">Job Title</label>
+                <input class="lead-form__input" id="input-jobTitle" type="text" required>
+                <label class="lead-form__label" for="input-website">Website</label>
+                <input class="lead-form__input" id="input-website" type="url" required>
+            </fieldset>
+        </section>
+
+        <section class="lead-form__section lead-form__section--details">
+            <h2 class="lead-form__section-heading">Lead Details</h2>
+            <div class="lead-form__details-box">
+                <h3 class="lead-form__details-heading">Interested Services</h3>
+                <select class="lead-form__select">
+                    <option>Web Development</option>
+                    <option>UI/UX Design</option>
+                    <option>Digital Marketing</option>
+                    <option>Cyber Security</option>
+                    <option>AI</option>
+                </select>
+
+                <h3 class="lead-form__details-heading">Budget</h3>
+                <div class="lead-form__budget">
+                    <label class="lead-form__budget-option">
+                        <input class="lead-form__radio" type="radio" name="budget">
+                        Under 1000$
+                    </label>
+                    <label class="lead-form__budget-option">
+                        <input class="lead-form__radio" type="radio" name="budget">
+                        1000$-5000$
+                    </label>
+                    <label class="lead-form__budget-option">
+                        <input class="lead-form__radio" type="radio" name="budget">
+                        5000$-10000$
+                    </label>
+                    <label class="lead-form__budget-option">
+                        <input class="lead-form__radio" type="radio" name="budget">
+                        Above 10000$
+                    </label>
+                </div>
+
+                <h3 class="lead-form__details-heading">Preferred Contacts</h3>
+                <div class="lead-form__preferred">
+                    <label class="lead-form__preferred-option">
+                        <input class="lead-form__radio" type="radio" name="preferred">
+                        Phone
+                    </label>
+                    <label class="lead-form__preferred-option">
+                        <input class="lead-form__radio" type="radio" name="preferred">
+                        Email
+                    </label>
+                    <label class="lead-form__preferred-option">
+                        <input class="lead-form__radio" type="radio" name="preferred">
+                        Whatsapp
+                    </label>
+                </div>
+
+                <h3 class="lead-form__details-heading">Expected Start Date</h3>
+                <input class="lead-form__date" type="date">
+
+                <h3 class="lead-form__details-heading">Notes</h3>
+                <textarea class="lead-form__textarea" rows="13" cols="50"></textarea>
+
+                <div class="lead-form__policy">
+                    <input class="lead-form__checkbox" type="checkbox">
+                    I agree to terms of privacy policy!
+                </div>
+            </div>
+        </section>
+
+        <button class="lead-form__submit">Submit</button>
+    </main>
+</body>
+</html>
