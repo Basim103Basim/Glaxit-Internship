@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section id="sidebar">
+        <div id="sidebar-image-container">
+            <img id="sidebar-image" src="images.png">
+        </div>
+        <p class="sidebar-text" tabindex="0">Dashboard</p>
+        <p class="sidebar-text" tabindex="0">Costumers</p>
+        <p class="sidebar-text" tabindex="0">Leads</p>
+        <p class="sidebar-text" tabindex="0">Sales</p>
+        <p class="sidebar-text" tabindex="0">Report</p>
+        <p class="sidebar-text" tabindex="0">Setting</p>
+        <p class="sidebar-text" tabindex="0">Log out</p>
+    </section>
+    <div id="not-sidebar">
+        <header>
+            <label for="header-searchBar">
+                <input id="header-searchBar" type="search" autocomplete="off" placeholder="Search">
+                🔍
+            </label>
+            <div id="header-rights">
+                <p id="header-notification" tabindex="0">🔔</p>
+                <img id="header-DP" src="noDp.png">
+                <p id="header-profileName">Basim</p>
+            </div>
+        </header>
+        <main>
+            <div id="card-container">
+                <div class="cards" id="card1">
+                    <img class="card-image" src="costumer.jfif">
+                    <h1 class="card-heading">Costumers</h1><br>
+                    <p class="card-text">12,000</p>
+                </div>
+                <div class="cards" id="card2">
+                    <img class="card-image" src="money.png">
+                    <h1 class="card-heading">Revenue</h1><br>
+                    <p class="card-text">450,000$</p>         
+                </div>
+                <div class="cards" id="card3">
+                    <img class="card-image" src="leads.png">
+                    <h1 class="card-heading">Leads</h1><br>
+                    <p class="card-text">81</p>
+                </div>
+                <div class="cards" id="card4">
+                    <img class="card-image" src="orders.png">
+                    <h1 class="card-heading">Orders</h1><br>
+                    <p class="card-text">452</p>
+                </div>
+            </div>
+            <div id="activity">
+                <span id="activity-heading">Recent Activity</span>
+                <table>
+                    <tr>
+                        <th>Costumer</th>
+                        <th>Action</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Ali</td>
+                        <td>New Lead</td>
+                        <td>Today</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>Sana</td>
+                        <td>Payment Received</td>
+                        <td>Yesterday</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>Yusaf</td>
+                        <td>New Order</td>
+                        <td>Monday</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Fatima</td>
+                        <td>Follow up</td>
+                        <td>Tuesday</td>
+                        <td>In Progress</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
