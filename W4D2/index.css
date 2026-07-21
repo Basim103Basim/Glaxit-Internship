@@ -1,0 +1,139 @@
+/*all start*/
+body{
+    display: grid;
+    grid-template-areas: "header header header" "sidebar main main";
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    font-family: 'Helvetica';
+}
+/*all end*/
+/*header start*/
+header{
+    box-sizing: border-box;
+    background: linear-gradient(135deg,rgb(91, 5, 5),rgb(156, 4, 4));
+    color: white;
+    text-align: center;
+    height: 20vh;
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+#header-heading{
+    margin: 0;
+    margin-top: 5vh;
+}
+#header-text{
+    margin: 0;
+    font-size: 0.8rem;
+}
+/*header end*/
+/*main start*/
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10vh;
+    margin-bottom: 30vh;
+}
+.cards{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.25);
+    width: 50vw;
+    height: 50vh;
+    margin-top: 5vh;
+}
+/*main end*/
+/*sidebar start*/
+#sidebar{
+    display: flex;
+    gap: 2vw;
+    position: fixed;
+    top: 21vh;
+    left: -30vw;
+    height: 77vh;
+    grid-area: sidebar;
+}
+#sidebar-box{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.25);
+    width: 30vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar-text{
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    border-radius: 10px;
+    width: 80%;
+}
+.sidebar-text:hover{
+    background: linear-gradient(135deg,rgb(91, 5, 5),rgb(156, 4, 4));
+    color: white;
+    box-shadow: 5px 5px 20px rgba(241, 63, 63,0.25);
+}
+.sidebar-text:active{
+    color: white;
+    box-shadow: 5px 5px 20px rgba(241, 63, 63,0.25);
+    background: linear-gradient(135deg,rgb(91, 5, 5),rgb(156, 4, 4));
+    transform: scale(1.1);
+}
+@keyframes slideIn{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(32vw);
+    }
+}
+@keyframes slideBack{
+    from{
+        transform:translateX(32vw);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+/*sidebar end*/
+/*button start*/
+button{
+    background-color: white;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 5px;
+    height: 5vh;
+    width: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:active{
+    background-color: rgb(192, 189, 189);
+}
+/*button end*/
+@media (min-width:767px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .cards{
+        width: 30vw;
+    }
+}
