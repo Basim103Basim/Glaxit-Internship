@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & Quote Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="city-box">
+        <input autocomplete="off" id="city-input" placeholder="Enter city you want to see weather of">
+        <button id="city-button">See Weather</button>
+    </div>
+    <button id="back">Choose another city</button>
+    <main>
+        <button id="view-button">Saved Quotes</button>
+        <div id="weather-box">
+            <h2 id="intro"></h2>
+            <p id="temp"></p>
+            <p id="humid"></p>
+            <p id="wind"></p>
+        </div>
+        <div id="quote-box">
+            <h3 id=quote></h3>
+            <button id="save-button">Save to Favorites</button>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
