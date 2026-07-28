@@ -1,0 +1,48 @@
+/*all start*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: aliceblue;
+  font-family: 'Helvetica';
+  padding-bottom: 7vh;
+}
+/*all end*/
+/*header start*/
+header{
+  background: linear-gradient(135deg,rgb(148, 4, 4),red);
+  height: 20vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
+  margin-bottom: 7vh;
+}
+header h1{
+  font-size: 2.5rem;
+}
+/*header end*/
+/*faqBox start*/
+#Box{
+  background-color: white;
+  width: 50vw;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 1vh;
+  transition: transform 0.5s 0.1s;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.25);
+  cursor: default;
+  font-size: 1.3rem;
+}
+#Box:hover{
+  transform: scale(1.05);
+}
+.questionBox{
+  font-weight: 700;
+}
+/*faqBox end*/
