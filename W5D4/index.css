@@ -1,0 +1,217 @@
+/*all start*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+    font-family: 'Helvetica';
+}
+main{
+    margin-left: 22vw;
+}
+/*all end*/
+/*hero start*/
+header{
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,rgb(118, 3, 3),red);
+    color: white;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.4);
+    height: 25vh;
+}
+header img{
+    height: 20vh;
+    width: 20vh;
+    display: block;
+    border-radius: 50%;
+    animation: slideIn 1s 0.1s forwards;
+}
+header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: slideIn 1s 0.1s forwards;
+}
+header div h1{
+    font-size: 2.5rem;
+}
+@keyframes slideIn{
+    from{
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/*hero end*/
+/*sidebar start*/
+#sidebar{
+    background-color: white;
+    height: 60vh;
+    width: 20vw;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.25);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7vh;
+    gap: 5vh;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding-left: 5vw;
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    border-radius: 10px;
+    transition: transform 1s 0.1s;
+}
+a:hover{
+    background: linear-gradient(135deg,rgb(118, 3, 3),red);
+    color: white;
+    font-weight: 700;
+}
+a:visited{
+    color: black;
+}
+a:visited:hover{
+    font-weight: 700;
+    color: white;
+}
+.active{
+    transform: scale(1.05);
+    background: linear-gradient(135deg,rgb(118, 3, 3),red);
+    color: white;
+    font-weight: 700;
+}
+.active:visited{
+    transform: scale(1.05);
+    background: linear-gradient(135deg,rgb(118, 3, 3),red);
+    color: white;
+    font-weight: 700;
+}
+/*sidebar end*/
+/*home start*/
+#aboutMe{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.25);
+    width: 70vw;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    padding: 20px;
+}
+#aboutMe p{
+    font-size: 1.1rem;
+    margin-top: 1vh;
+}
+table{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.25);
+    width: 70vw;
+    margin-top: 5vh;
+    margin-left: 2vw;
+}
+td,th{
+    text-align: center;
+    height: 7vh;
+    font-size: 1.2rem;
+}
+th{
+    background: linear-gradient(135deg,rgb(118, 3, 3),red);
+    color: white;
+    border-radius: 5px;
+}
+/*home end*/
+/*skills start*/
+#skills{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.25);
+    width: 60vw;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    margin-bottom: 10vh;
+}
+.skill-box{
+    margin-right: 2vw;
+    background: linear-gradient(135deg,rgb(118, 3, 3),red);
+    color: white;
+    font-weight: 700;
+    height: 7vh;
+    width: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: transform 1s 0.1s;
+    cursor: default;
+}
+.skill-box:hover{
+    background: linear-gradient(135deg,rgb(78, 2, 2),rgb(162, 5, 5));
+    transform: scale(1.1);
+}
+.row{
+    display: flex;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    margin-bottom: 5vh;
+}
+/*skills end*/
+/*contact start*/
+#contact{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.25);
+    width: 40vw;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    margin-bottom: 10vh;
+    height: 50vh;
+}
+#contact h1{
+    font-size: 2.5rem;
+}
+#contact p{
+    font-size: 1.2rem;
+}
+/*contact end*/
+/*projects start*/
+#projects{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.25);
+    width: 40vw;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    margin-bottom: 10vh;
+    height: 50vh;
+}
+#projects h1{
+    font-size: 2.5rem;
+}
+#projects p{
+    font-size: 1.2rem;
+    margin-top: 3vh;
+    margin-left: 2vw;
+}
+/*projects end*/
