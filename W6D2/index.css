@@ -1,0 +1,73 @@
+/*all start*/
+.light {
+    --bg: aliceblue;
+    --text: black;
+    --card: white;
+    --red: rgb(211, 47, 47);
+}
+
+.dark {
+    --bg: rgb(18,18,18);
+    --text: white;
+    --card: rgb(35,35,35);
+    --red: rgb(229, 57, 53);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--bg);
+  font-family: 'Helvetica';
+}
+/*all end*/
+/*header start*/
+header{
+  background-color: var(--red);
+  color: var(--text);
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h1{
+  font-size: 2.5rem;
+}
+/*header end*/
+/*navbar start*/
+nav{
+  background-color: var(--card);
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+  color: var(--text);
+  height: 7vh;
+  align-items: center;
+}
+/*navbar end*/
+/*sidebar start*/
+aside{
+  background-color: var(--bg);
+  color: var(--text);
+  width: 20vw;
+  height: 73vh;
+  padding: 30px;
+}
+aside p{
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 10%;
+}
+/*sidebar end*/
+/*content start*/
+main{
+  margin-left: 20vw;
+  background-color: var(--bg);
+}
+main p{
+  color: var(--text);
+}
+/*content end*/
